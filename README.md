@@ -1,5 +1,5 @@
-# FLO Customer Segmentation - Miuul Bootcamp
-
+# FLO Customer Segmentation
+This project was completed during the Miuul Data Science Bootcamp.
 ## Project Overview
 This project aims to segment FLO customers based on their shopping behavior to create better marketing strategies. The dataset includes past purchases of customers who shopped both online and offline (OmniChannel) between 2020 and 2021. Using RFM (Recency, Frequency, Monetary) analysis, customers are grouped into segments for more personalized communication and marketing.
 
