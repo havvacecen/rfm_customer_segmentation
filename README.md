@@ -1,43 +1,71 @@
-# FLO Customer Segmentation
-This project was completed during the Miuul Data Science Bootcamp.
-## Project Overview
-This project aims to segment FLO customers based on their shopping behavior to create better marketing strategies. The dataset includes past purchases of customers who shopped both online and offline (OmniChannel) between 2020 and 2021. Using RFM (Recency, Frequency, Monetary) analysis, customers are grouped into segments for more personalized communication and marketing.
+# 👟 FLO Customer Segmentation Project
 
-## Dataset
-The dataset used in this project comes from the Miuul Bootcamp and contains customer purchase data from FLO, a popular shoe retailer. It includes variables such as customer ID, shopping channels, dates of first and last orders, total purchase counts, total spending, and interest in product categories over the last 12 months.
+This project was completed during the Miuul Data Science Bootcamp and aims to segment FLO customers based on their shopping behaviors, enabling more effective and personalized marketing strategies.
 
-# Dataset Variable Descriptions
+---
 
-| Variable Name                    | Description                                                                                   |
-|---------------------------------|-----------------------------------------------------------------------------------------------|
-| `master_id`                     | Unique customer ID                                                                            |
-| `order_channel`                 | Platform through which the customer placed orders (e.g., Android, iOS, Desktop, Mobile)       |
-| `last_order_channel`            | Channel used for the customer's most recent purchase                                          |
-| `first_order_date`              | Date of the customer's first purchase                                                        |
-| `last_order_date`               | Date of the customer's most recent purchase                                                  |
-| `last_order_date_online`        | Date of the customer's last online purchase                                                  |
-| `last_order_date_offline`       | Date of the customer's last offline purchase                                                 |
-| `order_num_total_ever_online`   | Total number of purchases made online                                                        |
-| `order_num_total_ever_offline`  | Total number of purchases made offline                                                       |
-| `customer_value_total_ever_online`  | Total monetary value of online purchases                                                    |
-| `customer_value_total_ever_offline` | Total monetary value of offline purchases                                                   |
-| `interested_in_categories_12`  | List of product categories the customer purchased from in the last 12 months                 |
+## 📊 Project Overview
 
+The goal of this project is to analyze FLO customer data collected from both online and offline channels (OmniChannel) between 2020 and 2021. Using **RFM analysis (Recency, Frequency, Monetary)**, customers are grouped into meaningful segments for targeted marketing.
 
-**Note:** The dataset cannot be shared publicly. To run the project, you need access to the original data provided by Miuul Bootcamp.
+Key points:
+- Analyze purchase behaviors to identify different customer segments.
+- Score customers based on their purchasing recency, frequency, and monetary value.
+- Assign customers to segments such as champions, loyal customers, at risk, etc.
+- Identify special customer groups for specific marketing campaigns.
 
-## Key Steps
-- Data loading and initial exploration  
-- Data cleaning and preparation  
-- Calculation of RFM metrics (Recency, Frequency, Monetary)  
-- Scoring and segmentation of customers based on RFM values  
-- Identification of target customer groups for specific marketing campaigns  
-- Exporting selected customer IDs for campaign execution  
+---
 
-## How to Run
-1. Ensure you have access to the `flo_data_20k.csv` dataset provided by Miuul Bootcamp.  
-2. Install required libraries (pandas, datetime) if not already installed.  
-3. Run the Python scripts or Jupyter notebook step-by-step as outlined.  
+## 🧾 Dataset
 
-## Contact
-For questions or collaboration, please feel free to reach out.
+The dataset (`flo_data_20k.csv`) contains customer purchase history from FLO, a well-known shoe retailer, including data from both online and offline shopping platforms.
+
+| Variable Name                    | Description                                                      |
+|---------------------------------|------------------------------------------------------------------|
+| `master_id`                     | Unique customer identifier                                        |
+| `order_channel`                 | Platform used to place orders (Android, iOS, Desktop, Mobile)    |
+| `last_order_channel`            | Channel of the most recent purchase                              |
+| `first_order_date`              | Date of first purchase                                            |
+| `last_order_date`               | Date of most recent purchase                                     |
+| `last_order_date_online`        | Date of last online purchase                                     |
+| `last_order_date_offline`       | Date of last offline purchase                                    |
+| `order_num_total_ever_online`   | Total online purchase count                                      |
+| `order_num_total_ever_offline`  | Total offline purchase count                                     |
+| `customer_value_total_ever_online`  | Total monetary value of online purchases                        |
+| `customer_value_total_ever_offline` | Total monetary value of offline purchases                       |
+| `interested_in_categories_12`  | Product categories purchased by the customer in the last 12 months |
+
+> **Note:** The dataset is confidential and not publicly shared. Access is granted via Miuul Bootcamp.
+> **Note:** Output files generated by the analysis (e.g., premium customer lists) are not shared due to confidentiality.
+---
+
+## 🛠️ Technologies Used
+
+- Python  
+- pandas library for data manipulation  
+- datetime for date operations  
+
+---
+
+## ▶️ How to Use
+
+1. Place the `flo_data_20k.csv` dataset in your working directory.  
+2. Run the Python script or notebook step-by-step as provided.  
+3. Follow the analysis process to generate customer segments.  
+
+---
+
+## 🔑 Key Steps in the Analysis
+
+1. **Data Loading & Initial Exploration**  
+2. **Data Preparation**  
+3. **RFM Metric Calculation**  
+4. **RFM Scoring**  
+5. **Customer Segmentation**  
+6. **Marketing Target Identification**  
+
+---
+
+## 📞 Contact
+
+For questions, feedback, or collaboration, feel free to reach out!
