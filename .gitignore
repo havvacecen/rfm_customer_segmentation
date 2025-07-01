@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output files
+premium_customers_a.csv
+premium_customers_b.csv
+
+# Jupyter checkpoints
+.ipynb_checkpoints
+
+# VSCode or IDE-specific
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Environment
+.env
+*.env
