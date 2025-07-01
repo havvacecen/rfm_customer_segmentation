@@ -9,6 +9,7 @@ This project was completed during the Miuul Data Science Bootcamp and aims to se
 The goal of this project is to analyze FLO customer data collected from both online and offline channels (OmniChannel) between 2020 and 2021. Using **RFM analysis (Recency, Frequency, Monetary)**, customers are grouped into meaningful segments for targeted marketing.
 
 Key points:
+
 - Analyze purchase behaviors to identify different customer segments.
 - Score customers based on their purchasing recency, frequency, and monetary value.
 - Assign customers to segments such as champions, loyal customers, at risk, etc.
@@ -47,12 +48,33 @@ The dataset (`flo_data_20k.csv`) contains customer purchase history from FLO, a 
 
 ---
 
+## 📂 Project Structure
+
+```
+rfm-customer-segmentation/
+├── rfm_customer_segmentation.py
+├── flo_data_20k.csv # (Not shared publicly)
+├── requirements.txt
+├── .gitignore
+├── LICENSE
+├── README.md
+├── premium_customers_a.csv # Output file
+└── premium_customers_b.csv # Output file
+```
+
+---
+
 ## ▶️ How to Use
 
 1. Place the `flo_data_20k.csv` dataset in your working directory.  
-2. Run the Python script or notebook step-by-step as provided.  
-3. Follow the analysis process to generate customer segments.  
-
+2. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+3. Run the Python script:
+   ```
+   python rfm_customer_segmentation.py
+   ```
 ---
 
 ## 🔑 Key Steps in the Analysis
@@ -62,7 +84,13 @@ The dataset (`flo_data_20k.csv`) contains customer purchase history from FLO, a 
 3. **RFM Metric Calculation**  
 4. **RFM Scoring**  
 5. **Customer Segmentation**  
-6. **Marketing Target Identification**  
+6. **Marketing Target Identification**
+
+
+---
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
 ---
 
